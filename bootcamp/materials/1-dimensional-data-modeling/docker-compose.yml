@@ -4,8 +4,8 @@ services:
     restart: on-failure
     container_name: ${DOCKER_CONTAINER}
     env_file:
-      - .env
       - example.env
+      - agu.env
     environment:
       - POSTGRES_DB=${POSTGRES_SCHEMA}
       - POSTGRES_USER=${POSTGRES_USER}
